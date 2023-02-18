@@ -8,11 +8,11 @@ export default function Footer() {
               <h3 className=" text-sm font-medium text-gray-900">About</h3>
               <ul role=" list" className=" mt-2 space-y-2">
                 <li>
-                  <a href="/" className="text-sm text-gray-500 hover:text-gray-700">Company
+                  <a href="/company" className="text-sm text-gray-500 hover:text-gray-700">Company
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-gray-500 hover:text-gray-700">Contact</a>
+                  <a href="/contact" className="text-sm text-gray-500 hover:text-gray-700">Contact</a>
                 </li>
               </ul>
             </div>
