@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const Company = () => {
   return (
-    <>
+    <div className="min-h-screen pb-96 relative box-border">
       <Header title="会社概要"/>
       <main>
         <div className="bg-white">
@@ -68,7 +68,7 @@ const Company = () => {
         </div>
       </main>
       <Footer/>
-    </>
+    </div>
   );
 }
 

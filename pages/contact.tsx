@@ -4,10 +4,9 @@ import Footer from "../components/Footer";
 
 const ContactPage: React.FC = () => {
   return (
-    <>
+    <div className="min-h-screen pb-96 relative box-border">
       <Header title="Contact"/>
       <main>
-        {/*<div className="relative shadow rounded-3xl sm:p-28">*/}
         <div className="relative shadow rounded-3xl">
           <div className="w-128 m-20">
             <div className="flex items-center space-x-2">
@@ -60,7 +59,7 @@ const ContactPage: React.FC = () => {
         </div>
       </main>
       <Footer/>
-    </>
+    </div>
   );
 };
 
