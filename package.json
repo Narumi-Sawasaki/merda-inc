@@ -8,9 +8,18 @@
     "export": "next export"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.11",
+    "@heroicons/react": "^1.0.6",
     "cypress": "^10.0.3",
     "next": "^12.1.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.28",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6",
+    "typescript": "4.9.5"
   }
 }
