@@ -1,10 +1,11 @@
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Link from "next/link";
 
 const navigation = [
-  { name: 'Services', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Contact', href: '#' },
+  // { name: 'Services', href: '/services' },
+  { name: 'Company', href: '/company' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 
@@ -19,12 +20,15 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
               <div className="flex justify-between h-24">
                 <div className="flex">
                   <div className="flex-shrink-0 items-center">
-                    <img
-                      className="lg:block h-24"
-                      // src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                      src="/logo.png"
-                      alt="Workflow"
-                    />
+                    <Link href="/">
+                      <a>
+                        <img
+                          className="lg:block h-24"
+                          src="/logo.png"
+                          alt="Workflow"
+                        />
+                      </a>
+                    </Link>
                   </div>
                   {/*smより上であればdisplay:flex*/}
                   {/*そうでなければdisplay:hiddenが有効になる*/}
@@ -72,11 +76,11 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
         )}
       </Disclosure>
 
-      {/*<header className="bg-white shadow">*/}
-      {/*  <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">*/}
-      {/*    <h1 className="text-3xl font-bold leading-tight text-gray-900">{title}</h1>*/}
-      {/*  </div>*/}
-      {/*</header>*/}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold leading-tight text-gray-900">{title}</h1>
+        </div>
+      </header>
     </>
   )
 }

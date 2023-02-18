@@ -6,9 +6,9 @@ import { ListIcon } from "../components/Icon";
 export default function Home() {
   return (
     <>
-      <div className="bg-gray-50">
-        <Header title="About Us"/>
-        <main>
+      <Header title="About Us"/>
+      <main>
+        <div className="bg-gray-50">
           <div className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="lg:text-center">
@@ -76,8 +76,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
+
       <Footer/>
     </>
   )
